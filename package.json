@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "i18next": "^23.10.1",
+    "jquery-i18next": "^1.2.1"
+  }
+}
