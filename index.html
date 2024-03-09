@@ -38,8 +38,8 @@
                         <div class="col-lg-4 col-md-12">
                             <div class="logo">
                                 <a href="index.html">
-                                    <img src="img/flomatexs.png" alt="Logo" style="width: 200px; height: auto; margin: 10px; transform: scale(1.4);" >
-                                </a>
+                                    <img src="img/logo1.JPG" alt="" data-i18n="logoAltText">                              
+                                  </a>
                             </div>
                         </div>
                         <div class="col-lg-8 col-md-7 d-none d-lg-block">
@@ -99,8 +99,8 @@
 
                         <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                             <div class="navbar-nav mr-auto">
-                                <a href="index.html" class="nav-item nav-link active">Home</a>
-                                <a href="about.html" class="nav-item nav-link">About</a>
+                                <a href="index.html" class="nav-item nav-link active" data-i18n="home">Home</a>
+                                <a href="about.html" class="nav-item nav-link" data-i18n="about">About</a>
                                 <a href="service.html" class="nav-item nav-link">Service</a>
                                 <a href="team.html" class="nav-item nav-link">Team</a>
                                 <a href="portfolio.html" class="nav-item nav-link">Projects</a>
@@ -112,6 +112,14 @@
                                     </div>
                                 </div>
                                 <a href="contact.html" class="nav-item nav-link">Contact</a>
+                                <div class="nav-item dropdown">
+                                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Language</a>
+                                    <div class="dropdown-menu">
+                                        <button class="dropdown-item" onclick="changeLanguage('en')">English</button>
+                                        <button class="dropdown-item" onclick="changeLanguage('ku')">Kurdish</button>
+                                        <button class="dropdown-item" onclick="changeLanguage('ar')">Arabic</button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </nav>
@@ -134,7 +142,6 @@
                         <div class="carousel-caption">
                             <p class="animated fadeInRight">We Are Professional</p>
                             <h1 class="animated fadeInLeft">For Your Dream Projects </h1><br><br><br><br><br><br><br><br>
-                           <a href="https://api.whatsapp.com/send?phone=+254 722 158950" class="btn" style="color: darkgreen; background-color: black;">WhatsApp Chat!</a>
                         </div>
                     </div>
 
@@ -143,7 +150,6 @@
                         <div class="carousel-caption">
                             <p class="animated fadeInRight">Professional Builder</p>
                             <h1 class="animated fadeInLeft">We Build Your Home</h1><br><br><br><br><br><br><br><br>
-                           <a href="https://api.whatsapp.com/send?phone=+254 722 158950" class="btn" style="color: darkgreen; background-color: black;">WhatsApp Chat!</a>
                         </div>
                     </div>
 
@@ -152,7 +158,6 @@
                         <div class="carousel-caption">
                             <p class="animated fadeInRight">We Are Trusted</p>
                             <h1 class="animated fadeInLeft">For Your Dream Home</h1><br><br><br><br><br><br><br><br>
-                           <a href="https://api.whatsapp.com/send?phone=+254 722 158950" class="btn" style="color: darkgreen; background-color: black;">WhatsApp Chat!</a>
                         </div>
                     </div>
                 </div>
@@ -930,7 +935,10 @@ Yes, Flomatexs Construction Limited typically provides a warranty or guarantee o
         <script src="lib/waypoints/waypoints.min.js"></script>
         <script src="lib/counterup/counterup.min.js"></script>
         <script src="lib/slick/slick.min.js"></script>
-
+        <script type="module" src="index.js"></script>
+        <script src="https://unpkg.com/i18next@latest/dist/umd/i18next.min.js"></script>
+        <script src="https://unpkg.com/jquery-i18next@latest/dist/umd/jquery-i18next.min.js"></script>
+        <script src="https://unpkg.com/i18next-http-backend@latest/i18nextHttpBackend.min.js"></script>
         <!-- Template Javascript -->
         <script src="js/main.js"></script>
     </body>
