@@ -19,12 +19,12 @@ i18next
       $('body').localize();
   
       // Check if the language is Kurdish or Arabic
-      if (lng === 'ku' || lng === 'ar') {
-        // Change text direction to RTL
-        $('html').attr('dir', 'rtl');
-      } else {
-        // Change text direction to LTR
-        $('html').attr('dir', 'ltr');
-      }
+      // if (lng === 'ku' || lng === 'ar') {
+      //   // Change text direction to RTL
+      //   $('html').attr('dir', 'rtl');
+      // } else {
+      //   // Change text direction to LTR
+      //   $('html').attr('dir', 'ltr');
+      // }
     });
   }
