@@ -1746,7 +1746,12 @@ a:focus {
     position: relative;
     margin: -5px -5px;
 }
-
+.centered-photo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .single .tag-widget a {
     margin: 5px;
     display: inline-block;
