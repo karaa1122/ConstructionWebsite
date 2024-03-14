@@ -5,10 +5,10 @@
         <meta name="keywords" content="construction, flomatexs, Flomatexs Construction Limited, Building" />
         <meta name="description" content="Building Dreams, Crafting Futures" />
         <title>Flomatexs Construction Limited </title>
-        <link rel = "icon" href = "img/flomatexs.png" type = "image/x-icon">
+        <link rel = "icon" href = "img/logo-black.png" type = "image/x-icon">
 
         <!-- Favicon -->
-        <link href="img/favicon.ico" rel="icon">
+        <link href="img/logo-black.png" rel="icon">
 
         <!-- Google Font -->
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -39,7 +39,7 @@
                         <div class="col-lg-4 col-md-12">
                             <div class="logo">
                                 <a href="index.html">
-                                    <img src="img/flomatexs.png" alt="Logo" style="width: 200px; height: auto; margin: 10px; transform: scale(1.4);" >
+                                    <img src="img/logo.png" alt="Logo" style="width: 100px; height: auto; margin: 10px; transform: scale(1.4);" >
                                 </a>
                             </div>
                         </div>
@@ -69,7 +69,7 @@
                                     </div>
                                 </div>
                                 <div class="col-4">
-                                    <div class="top-bar-item">
+                                    <!-- <div class="top-bar-item">
                                         <div class="top-bar-icon">
                                             <i class="flaticon-send-mail"></i>
                                         </div>
@@ -80,7 +80,7 @@
                                                       </a>
 
                                          </div>
-                                    </div>
+                                    </div> -->
                                 </div>
                             </div>
                         </div>
@@ -93,32 +93,33 @@
             <div class="nav-bar">
                 <div class="container-fluid">
                     <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
-                        <a href="#" class="navbar-brand">MENU</a>
+                        <a href="#" class="navbar-brand" data-i18n="menu">MENU</a>
                         <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                             <span class="navbar-toggler-icon"></span>
                         </button>
 
                         <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                             <div class="navbar-nav mr-auto">
-                                <a href="index.html" class="nav-item nav-link">Home</a>
-                                <a href="about.html" class="nav-item nav-link">About</a>
-                                <a href="service.html" class="nav-item nav-link">Service</a>
-                                <a href="team.html" class="nav-item nav-link">Team</a>
-                                <a href="portfolio.html" class="nav-item nav-link">Projects</a>
+                                <a href="index.html" class="nav-item nav-link active" data-i18n="home">Home</a>
+                                <a href="" class="nav-item nav-link" data-i18n="about">About</a>
                                 <div class="nav-item dropdown">
-                                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Blog / Posts</a>
                                     <div class="dropdown-menu">
-                                        <a href="blog.html" class="dropdown-item">Blog Page</a>
-                                        <a href="single.html" class="dropdown-item">Posts Page</a>
                                     </div>
                                 </div>
-                                <a href="contact.html" class="nav-item nav-link">Contact</a>
+                                <a href="contact.html" class="nav-item nav-link" data-i18n="contact">Contact</a>
+                                <div class="nav-item dropdown">
+                                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" data-i18n="Language">Language</a>
+                                    <div class="dropdown-menu">
+                                        <button class="dropdown-item" onclick="changeLanguage('en')">English</button>
+                                        <button class="dropdown-item" onclick="changeLanguage('ku')">کوردی</button>
+                                        <button class="dropdown-item" onclick="changeLanguage('ar')">العربیە</button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </nav>
                 </div>
-            </div>
-            <!-- Nav Bar End -->
+            </div> <!-- Nav Bar End -->
        <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -129,13 +130,13 @@
         <h1 style="text-align: center; color: white;" sty>Our Projects Gallery</h1>
         <nav  >
             <ul>
-                <li><a href="#" data-category="all" >All</a></li>
-                <li><a href="#" data-category="building-construction">Building Construction</a></li>
-                <li><a href="#" data-category="architecture-design">Architecture Design</a></li>
-                <li><a href="#" data-category="interior-design">Interior Design</a></li>
-                <li><a href="#" data-category="house-renovation">House Renovation</a></li>
-                <li><a href="#" data-category="fixing-support">Fixing & Support</a></li>
-                <li><a href="#" data-category="painting">Painting</a></li>
+                <li><a href="#" data-category="all" data-i18n="all">All</a></li>
+                <li><a href="#" data-category="building-construction" data-i18n="building-construction">Building Construction</a></li>
+                <li><a href="#" data-category="architecture-design" data-i18n="architecture-design">Concrete constructions</a></li>
+                <li><a href="#" data-category="interior-design" data-i18n="interior-design">Architecture Design</a></li>
+                <li><a href="#" data-category="house-renovation" data-i18n="house-renovation">House Renovation</a></li>
+                <li><a href="#" data-category="fixing-support" data-i18n="fixing-support">Electric Support</a></li>
+                <li><a href="#" data-category="painting" data-i18n="painting">Painting</a></li>
             </ul>
         </nav >
     </header>
@@ -159,11 +160,7 @@
                             <p><i class="fa fa-phone-alt"></i>+254 723 049800</p>
                             <p><i class="fa fa-envelope"></i>Flomatexsbuildingconstractor @gmail.com</p>
                             <div class="footer-social">
-                                <a href=""><i class="fab fa-twitter"></i></a>
-                                <a href=""><i class="fab fa-facebook-f"></i></a>
-                                <a href=""><i class="fab fa-linkedin-in"></i></a>
                                 <a href=""><i class="fab fa-instagram"></i></a>
-                                <a href=""><i class="fab fa-youtube"></i></a>
                             </div>
                         </div>
                     </div>
@@ -195,15 +192,15 @@
                                 Get Exclusive Content: Access subscriber-only articles, offers, and promotions.
                                 Be Inspired: Discover new ideas, trends, and insights to inspire your journey.
                             </p>
-                            <div class="form">
+                            <!-- <div class="form">
                                 <input class="form-control" placeholder="Email here">
                                 <button class="btn">Submit</button>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>
-            <div class="container footer-menu">
+            <!-- <div class="container footer-menu">
                 <div class="f-menu">
                     <a href="">Terms of use</a>
                     <a href="">Privacy policy</a>
@@ -224,7 +221,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
         <!-- Footer End -->
 
         <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
