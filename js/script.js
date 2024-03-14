@@ -2,34 +2,32 @@ document.addEventListener("DOMContentLoaded", function() {
     const portfolio = document.getElementById("portfolio");
     const categories = document.querySelectorAll("nav a");
 
-    
+    function populatePortfolio(categoryFilter) {
+        portfolio.innerHTML = ""; // Clear portfolio
+
+        // Filter images based on selected category
+        const filteredImages = portfolioData.filter(item => {
+            return item.category === categoryFilter || categoryFilter === "all";
+        });
+
+        filteredImages.forEach(item => {
+            const imgElement = document.createElement("div");
+            imgElement.classList.add("portfolio-item");
+            imgElement.innerHTML = `<img src="${item.image}" alt="${item.title}">`;
+            portfolio.appendChild(imgElement);
+        });
+    }
+
+    // Populate portfolio with all images on page load
+    populatePortfolio("all");
 
     categories.forEach(category => {
         category.addEventListener("click", function() {
             const categoryFilter = this.dataset.category;
-            portfolio.innerHTML = ""; // Clear portfolio
-            const filteredItems = (category === "all") ? portfolioData : portfolioData.filter(item => {
-                return item.category === category;
-            });
-            
-
-            // Filter images based on selected category
-            const filteredImages = portfolioData.filter(item => {
-                return item.category === categoryFilter || categoryFilter === "all";
-            });
-            
-            
-
-            filteredImages.forEach(item => {
-                const imgElement = document.createElement("div");
-                imgElement.classList.add("portfolio-item");
-                imgElement.innerHTML = `<img src="${item.image}" alt="${item.title}">`;
-                portfolio.appendChild(imgElement);
-            });
+            populatePortfolio(categoryFilter);
         });
     });
 });
-
     
 
 
