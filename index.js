@@ -31,3 +31,12 @@ i18next
       // }
     });
   }
+
+  document.querySelectorAll('.service-item .btn').forEach(function(button) {
+    button.addEventListener('click', function(e) {
+        e.preventDefault();
+        var category = e.target.closest('.service-item').querySelector('h3').textContent.trim().toLowerCase();
+        localStorage.setItem('selectedCategory', category);
+        window.location.href = 'galary.html';
+    });
+});
