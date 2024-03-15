@@ -1,10 +1,10 @@
 i18next
   .use(i18nextHttpBackend)
   .init({
-    lng: 'en', // set the default language
-    fallbackLng: 'en', // set the fallback language
+    lng: localStorage.getItem('selectedLanguage') || 'en', // use the stored language or 'en' if none is stored
+    fallbackLng: 'en',
     backend: {
-      loadPath: '/locale/{{lng}}/translation.json', // path to your translation files
+      loadPath: '/locale/{{lng}}/translation.json',
     },
   }, function(err, t) {
     if (err) return console.log('something went wrong loading', err);
@@ -17,6 +17,9 @@ i18next
     i18next.changeLanguage(lng, function(err, t) {
       if (err) return console.log('something went wrong loading', err);
       $('body').localize();
+
+      localStorage.setItem('selectedLanguage', lng);
+
   
       // Check if the language is Kurdish or Arabic
       // if (lng === 'ku' || lng === 'ar') {
