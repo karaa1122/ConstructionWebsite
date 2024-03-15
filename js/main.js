@@ -136,3 +136,18 @@
     });
     
 })(jQuery);
+
+
+var dropdownMenu = document.querySelector('.dropdown-menu');
+
+// Add event listener for opening the dropdown
+document.querySelector('.dropdown-toggle').addEventListener('click', function() {
+  dropdownMenu.classList.toggle('show');
+});
+
+// Add event listener for clicking outside the dropdown
+window.addEventListener('click', function(event) {
+  if (!event.target.matches('.dropdown-toggle')) {
+    dropdownMenu.classList.remove('show');
+  }
+});
