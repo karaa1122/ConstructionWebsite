@@ -49,7 +49,6 @@ const portfolioData = [
     { category: "building-construction", image: "img/building4.jpg", title: "Construction" },
     { category: "building-construction", image: "img/building5.jpg", title: "Construction" },
     { category: "architecture-design", image: "img/conc1.jpg", title: "architecture-design" },
-    { category: "painting", image: "img/conpaint.jpg", title: "Painting" },
     { category: "painting", image: "img/pai1.jpg", title: "Painting" },
     { category: "painting", image: "img/pai2.jpg", title: "Painting" },
     { category: "painting", image: "img/pai3.jpg", title: "Painting" },
