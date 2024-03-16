@@ -35,13 +35,13 @@
         </div>
         <div class="wrapper">
             <!-- Top Bar Start -->
-            <div class="top-bar">
+            <div class="top-bar"  style="background-color: white;">
                 <div class="container-fluid">
                     <div class="row align-items-center">
                         <div class="col-lg-4 col-md-12">
                             <div class="logo">
                                 <a href="index.html">
-                                    <img src="img/logo.png" alt="" data-i18n="logoAltText" class="logo-image">
+                                    <img src="img/no-bg.png" alt="" data-i18n="logoAltText" class="logo-image" style="width: 100px; height: auto">
                                     </a>
                             </div>
                         </div>
@@ -65,7 +65,7 @@
                                         </div>
                                         <div class="top-bar-text">
                                             <h3 data-i18n="gg">Call Us</h3>
-                                            <p><a href="tel:+9647503303429">+964 0750 330 34 29</a></p>
+                                            <p><a href="tel:+9647503303439">+964 0750 330 34 39</a></p>
                                               <p><a href="tel:+9647502412233">+964 0750 241 22 33</a></p>
                                         </div>
                                     </div>
@@ -96,11 +96,20 @@
             <!-- Nav Bar Start -->
             <div class="nav-bar">
                 <div class="container-fluid">
+                    
                     <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
-                        <a href="#" class="navbar-brand" data-i18n="menu">MENU</a>
-                        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" data-i18n="Language">Language</a>
+                            <div class="dropdown-menu">
+                                <button class="dropdown-item" onclick="changeLanguage('en')">English</button>
+                                <button class="dropdown-item" onclick="changeLanguage('ku')">کوردی</button>
+                                <button class="dropdown-item" onclick="changeLanguage('ar')">العربیە</button>
+                            </div>
+                        </div>            
+                            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                             <span class="navbar-toggler-icon"></span>
                         </button>
+                        
 
                         <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                             <div class="navbar-nav mr-auto">
@@ -113,14 +122,6 @@
                                 <a href="contact.html" class="nav-item nav-link" data-i18n="con">Contact</a>
                                 <a href="index.html#services" class="nav-item nav-link" data-i18n="services">Services</a>
                                 <a href="galary.html" class="nav-item nav-link" data-i18n="contact">Gallery</a>
-                                <div class="nav-item dropdown">
-                                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" data-i18n="Language">Language</a>
-                                    <div class="dropdown-menu">
-                                        <button class="dropdown-item" onclick="changeLanguage('en')">English</button>
-                                        <button class="dropdown-item" onclick="changeLanguage('ku')">کوردی</button>
-                                        <button class="dropdown-item" onclick="changeLanguage('ar')">العربیە</button>
-                                    </div>
-                                </div>
                             </div>
                         </div>
                     </nav>
@@ -142,7 +143,9 @@
                         <img src="img/home-slide-1.jpg" alt="Carousel Image">
                         <div class="carousel-caption">
                             <p class="animated fadeInRight" data-i18n="professional">We Are Professional</p>
-                            <h1 class="animated fadeInLeft" data-i18n="dream-project">For Your Dream Projects </h1><br><br><br><br><br><br><br><br>
+                            <h1 class="animated fadeInLeft" data-i18n="dream-project">For Your Dream Projects </h1><br><br><br><br><br><br><br><br><br><br>
+                            <a href="https://www.instagram.com/meman_company/" class="btn" style="background-color: #f3bb04; color: #030f27; border-radius: 50px; padding: 10px 20px; border-color: #030f27;">Instagram</a>
+
                         </div>
                     </div>
 
@@ -150,7 +153,9 @@
                         <img src="img/photo3.jpg" alt="Carousel Image">
                         <div class="carousel-caption">
                             <p class="animated fadeInRight" data-i18n="pro-builder">Professional Builder</p>
-                            <h1 class="animated fadeInLeft" data-i18n="build-home">We Build Your Home</h1><br><br><br><br><br><br><br><br>
+                            <h1 class="animated fadeInLeft" data-i18n="build-home">We Build Your Home</h1><br><br><br><br><br><br><br><br><br><br>
+                            <a href="https://www.instagram.com/meman_company/" class="btn" style="background-color: #f3bb04; color: #030f27; border-radius: 50px; padding: 10px 20px; border-color: #030f27;">Instagram</a>
+
                         </div>
                     </div>
 
@@ -158,7 +163,8 @@
                         <img src="img/photo4.jpg" alt="Carousel Image">
                         <div class="carousel-caption">
                             <p class="animated fadeInRight" data-i18n="we-are-trusted">We Are Trusted</p>
-                            <h1 class="animated fadeInLeft" data-i18n="your-home">For Your Dream Home</h1><br><br><br><br><br><br><br><br>
+                            <h1 class="animated fadeInLeft" data-i18n="your-home">For Your Dream Home</h1><br><br><br><br><br><br><br><br><br><br>
+                            <a href="https://www.instagram.com/meman_company/" class="btn" style="background-color: #f3bb04; color: #030f27; border-radius: 50px; padding: 10px 20px; border-color: #030f27;">Instagram</a>
                         </div>
                     </div>
                 </div>
@@ -285,6 +291,56 @@
                 </div>
             </div>
             <!-- Feature End-->
+            <div class="fact">
+                <div class="container-fluid">
+                    <div class="row counters">
+                        <div class="col-md-6 fact-left wow slideInLeft">
+                            <div class="row">
+                               <div class="col-6">
+                                    <div class="fact-icon">
+                                        <i class="flaticon-worker"></i>
+                                    </div>
+                                    <div class="fact-text">
+                                        <h2 data-toggle="counter-up">+700</h2>
+                                        <p data-i18n="expert-workerss">Expert Workers</p>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="fact-icon">
+                                        <i class="flaticon-building"></i>
+                                    </div>
+                                    <div class="fact-text">
+                                        <h2 data-toggle="counter-up">+100</h2>
+                                        <p data-i18n="happy-clients">Happy Clients</p>
+                                    </div> 
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 fact-right wow slideInRight">
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="fact-icon">
+                                        <i class="flaticon-address"></i>
+                                    </div>
+                                    <div class="fact-text">
+                                        <h2 data-toggle="counter-up">189</h2>
+                                        <p data-i18n="completed-projects">Completed Projects</p>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="fact-icon">
+                                        <i class="flaticon-crane"></i>
+                                    </div>
+                                    <div class="fact-text">
+                                        <h2 data-toggle="counter-up">5</h2>
+                                        <p data-i18n="running-projects">Running Projects</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <!-- Fact End -->
 
 
@@ -331,7 +387,7 @@
                         <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                             <div class="service-item">
                                 <div class="service-img">
-                                    <img src="img/mengi.jpg" alt="Image">
+                                    <img src="img/haa.jpeg" alt="Image">
                                     <div class="service-overlay">
                                         <p data-i18n="d">
                                             We provide comprehensive services in the field of project management, as we take on all aspects of the project from planning
@@ -374,7 +430,7 @@
                         <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
                             <div class="service-item">
                                 <div class="service-img">
-                                    <img src="img/service-5.jpg" alt="Image">
+                                    <img src="img/asn.jpg" alt="Image">
                                     <div class="service-overlay">
                                         <p data-i18n="h">
                                          We implement all types of finishes
@@ -387,7 +443,7 @@
                                     </div>
                                 </div>
                                 <div class="service-text">
-                                    <h3 style="font-size: 14px;" data-i18n="g">Finishing and decoration works</h3>
+                                    <h3 data-i18n="g">Blaksmith</h3>
                             <a class="btn" href="galary.html" >+</a>
                                 </div>
                             </div>
@@ -395,7 +451,7 @@
                         <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
                             <div class="service-item">
                                 <div class="service-img">
-                                    <img src="img/painting.jpeg" alt="Image">
+                                    <img src="img/pain.jpg" alt="Image">
                                     <div class="service-overlay">
                                         <p data-i18n="j">
                                             "Bringing vibrance and character to spaces with expertly applied strokes, transforming walls into works of art."</p>
@@ -416,7 +472,7 @@
             <!-- Video Start -->
 <div class="video wow fadeIn" data-wow-delay="0.1s">
     <div class="container">
-        <button type="button" class="btn-play" data-toggle="modal" data-src="img\vid440.mp4" data-target="#videoModal">
+        <button type="button" class="btn-play" data-toggle="modal" data-src="img/viddd.mp4" data-target="#videoModal">
             <span></span>
         </button>
     </div>
