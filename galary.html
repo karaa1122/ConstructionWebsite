@@ -87,8 +87,8 @@
                                         </div>
                                         <div class="top-bar-text">
                                             <h3 data-i18n="gg">Call Us</h3>
-                                            <p><a href="tel:+254722158950">+964 0750 241 22 33</a></p>
-                                            <p><a href="tel:+254723049800">+964 0750 330 34 29</a></p>
+                                            <p><a href="tel:+9647503303429">+964 0750 330 34 29</a></p>
+                                              <p><a href="tel:+9647502412233">+964 0750 241 22 33</a></p>
                                         </div>
                                     </div>
                                     
@@ -127,8 +127,15 @@
                             <div class="navbar-nav mr-auto">
                                 <a href="index.html" class="nav-item nav-link active" data-i18n="home">Home</a>
                                 <a href="index.html#services" class="nav-item nav-link" data-i18n="services">Services</a>
-                                <a href="index.html#youmayask" class="nav-item nav-link" data-i18n="youmayask">You May Ask</a>
-                                <a href="contact.html" class="nav-item nav-link" data-i18n="contact">Contact</a>
+                                <a href="contact.html" class="nav-item nav-link" data-i18n="con">Contact</a>
+                                <div class="nav-item dropdown">
+                                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" data-i18n="Language">Language</a>
+                                    <div class="dropdown-menu">
+                                        <button class="dropdown-item" onclick="changeLanguage('en')">English</button>
+                                        <button class="dropdown-item" onclick="changeLanguage('ku')">کوردی</button>
+                                        <button class="dropdown-item" onclick="changeLanguage('ar')">العربیە</button>
+                                    </div>
+                                </div>
                         </div>
                     </nav>
                 </div>
@@ -140,7 +147,7 @@
 </head>
 <body>
     <header>
-        <h1 style="text-align: center; color: rgb(7, 7, 7);" sty>Our Projects Gallery</h1>
+        <h1 style="text-align: center; color: rgb(7, 7, 7);" data-i18n="our-galary">Our Projects Gallery</h1>
         <br>
         <nav>
             <ul>
@@ -181,22 +188,23 @@
                     <div class="col-md-6 col-lg-3">
                         <div class="footer-link">
                             <h2 data-i18n="jj">Services</h2>
-                            <a>Building Construction</a>
-                            <a>House Renovation</a>
-                            <a>Architecture Design</a>
-                            <a>Electrical Service</a>
-                            <a>Painting</a>
+                            <a data-i18n="buildingConstruction">Building Construction</a>
+                            <a data-i18n="houseRenovation">House Renovation</a>
+                            <a data-i18n="architectureDesign">Architecture Design</a>
+                            <a data-i18n="electricalService">Electrical Service</a>
+                            <a data-i18n="concreteConstruction">Concrete Construction</a>
+                            <a data-i18n="paintings">Painting</a>
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-6">
                         <div class="footer-link">
-                            <h2>The following places are evidence of the honesty and accuracy of our work:</h2>
-                            <a>Toyota Company in Erbil - Zakho - Basra in 2009-2</a>
-                            <a>The Spanish Village Project, working on its homes and some of its projects</a>
-                            <a>The golden company</a>
-                            <a>Rami Tower Company</a>
-                            <a>Al-Fath Association in Baghdad</a>
-                            <a>Al-Badur sect in Baghdad</a>
+                            <h2 data-i18n="qq">The following places are evidence of the honesty and accuracy of our work:</h2>
+                            <a data-i18n="ll">Toyota Company in Erbil - Zakho - Basra in 2009-2</a>
+                            <a data-i18n="mm">The Spanish Village Project, working on its homes and some of its projects</a>
+                            <a data-i18n="nn">The golden company</a>
+                            <a data-i18n="oo">Rami Tower Company</a>
+                            <a data-i18n="pp">Al-Fath Association in Baghdad</a>
+                            <a data-i18n="kk">Al-Badur sect in Baghdad</a>
                 
                         
                         </div>
@@ -231,6 +239,10 @@
     </div>
 
     <!-- JavaScript Libraries -->
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    <script src="js/script.js"></script>
+    <script src="index.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
     <script src="lib/easing/easing.min.js"></script>
@@ -241,11 +253,12 @@
     <script src="lib/waypoints/waypoints.min.js"></script>
     <script src="lib/counterup/counterup.min.js"></script>
     <script src="lib/slick/slick.min.js"></script>
-
+    <script type="module" src="index.js"></script>
+    <script src="https://unpkg.com/i18next@latest/dist/umd/i18next.min.js"></script>
+    <script src="https://unpkg.com/jquery-i18next@latest/dist/umd/jquery-i18next.min.js"></script>
+    <script src="https://unpkg.com/i18next-http-backend@latest/i18nextHttpBackend.min.js"></script>
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
-    <script src="js/script.js"></script>
-    
 </body>
 </html>
 

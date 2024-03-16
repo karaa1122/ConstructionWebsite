@@ -38,6 +38,9 @@
             .form-control::-webkit-input-placeholder {
                 color: #000000 !important; /* Black color for WebKit browsers */
             }
+            input, textarea {
+                color: black !important;
+            }
         </style>
     </head>
 
@@ -74,8 +77,8 @@
                                         </div>
                                         <div class="top-bar-text">
                                             <h3 data-i18n="gg">Call Us</h3>
-                                              <p><a href="tel:+254722158950">+964 0750 241 22 33</a></p>
-                                              <p><a href="tel:+254723049800">+964 0750 330 34 29</a></p>
+                                            <p><a href="tel:+9647503303429">+964 0750 330 34 29</a></p>
+                                              <p><a href="tel:+9647502412233">+964 0750 241 22 33</a></p>
                                         </div>
                                     </div>
                                     
@@ -116,7 +119,15 @@
                                 <a href="index.html" class="nav-item nav-link active" data-i18n="home">Home</a>
                                 <a href="galary.html" class="nav-item nav-link active" data-i18n="home">Gallery</a>
                                 <a href="index.html#services" class="nav-item nav-link" data-i18n="services">Services</a>
-                                <a href="index.html#youmayask" class="nav-item nav-link" data-i18n="youmayask">You May Ask</a>
+                                <a href="galary.html" class="nav-item nav-link" data-i18n="contact">Gallery</a>
+                                <div class="nav-item dropdown">
+                                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" data-i18n="Language">Language</a>
+                                    <div class="dropdown-menu">
+                                        <button class="dropdown-item" onclick="changeLanguage('en')">English</button>
+                                        <button class="dropdown-item" onclick="changeLanguage('ku')">کوردی</button>
+                                        <button class="dropdown-item" onclick="changeLanguage('ar')">العربیە</button>
+                                    </div>
+                                </div>
                                 
                         </div>
                     </nav>
@@ -129,11 +140,9 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-12">
-                            <h2>Contact Us</h2>
+                            <h2 data-i18n="contact-us">Contact Us</h2>
                         </div>
                         <div class="col-12">
-                            <a href="index.html">Home</a>
-                            <a href="contact.html">Contact Us</a>
                         </div>
                     </div>
                 </div>
@@ -145,8 +154,7 @@
             <div class="contact wow fadeInUp">
                 <div class="container">
                     <div class="section-header text-center">
-                        <p>Get In Touch</p>
-                        <h2>For Any Query</h2>
+                        <h2 data-i18n="for-any-questions">For Any Query</h2>
                     </div>
                     <div class="row">
                         <div class="col-md-6">
@@ -154,22 +162,22 @@
                                 <div class="contact-item">
                                     <i class="flaticon-address"></i>
                                     <div class="contact-text">
-                                        <h2>Location</h2>
-                                        <p>Erbil, Iraq opposite Family Mall</p>
+                                        <h2 data-i18n="location">Location</h2>
+                                        <p data-i18n="ii">Erbil, Iraq opposite Family Mall</p>
                                     </div>
                                 </div>
                                 <div class="contact-item">
                                     <i class="flaticon-call"></i>
                                     <div class="contact-text">
-                                        <h2>Phone</h2>
-                                        <p>0750 330 3439</p>
-                                        <p>0750 241 2233</p>
+                                        <h2 data-i18n="phone">Phone</h2>
+                                        <p data-i18n="phone-t">0750 330 3439</p>
+                                        <p data-i18n="phone-y">0750 241 2233</p>
                                     </div>
                                 </div>
                                 <div class="contact-item">
                                     <i class="flaticon-send-mail"></i>
                                     <div class="contact-text">
-                                        <h2>Email</h2>
+                                        <h2 data-i18n="email">Email</h2>
                                         <p>memancompany@gmail.com</p>
                                     </div>
                                 </div>
@@ -180,23 +188,23 @@
                                 <div id="success"></div>
                                 <form name="sentMessage" id="contactForm" novalidate="novalidate">
                                     <div class="control-group">
-                                        <input type="text" class="form-control" id="name" placeholder="Your Name" required="required" data-validation-required-message="Please enter your name" />
+                                        <input type="text" class="form-control" id="name" placeholder="" data-i18n="[placeholder]your-name" required="required" data-validation-required-message="Please enter your name" />
                                         <p class="help-block text-danger"></p>
                                     </div>
                                     <div class="control-group">
-                                        <input type="email" class="form-control" id="email" placeholder="Your Email" required="required" data-validation-required-message="Please enter your email" />
+                                        <input type="email" class="form-control" id="email" placeholder="" data-i18n="[placeholder]your-email" required="required" data-validation-required-message="Please enter your email" />
                                         <p class="help-block text-danger"></p>
                                     </div>
                                     <div class="control-group">
-                                        <input type="text" class="form-control" id="subject" placeholder="Subject" required="required" data-validation-required-message="Please enter a subject" />
+                                        <input type="text" class="form-control" id="subject" placeholder="" data-i18n="[placeholder]subject" required="required" data-validation-required-message="Please enter a subject" />
                                         <p class="help-block text-danger"></p>
                                     </div>
                                     <div class="control-group">
-                                        <textarea class="form-control" id="message" placeholder="Message" required="required" data-validation-required-message="Please enter your message"></textarea>
+                                        <textarea class="form-control" id="message" placeholder="" data-i18n="[placeholder]message" required="required" data-validation-required-message="Please enter your message"></textarea>
                                         <p class="help-block text-danger"></p>
                                     </div>
                                     <div>
-                                        <button class="btn" type="submit" id="sendMessageButton">Send Message</button>
+                                        <button class="btn" type="submit" id="sendMessageButton" data-i18n="send-message">Send Message</button>
                                     </div>
                                 </form>
                             </div>
@@ -226,22 +234,23 @@
                         <div class="col-md-6 col-lg-3">
                             <div class="footer-link">
                                 <h2 data-i18n="jj">Services</h2>
-                                <a>Building Construction</a>
-                                <a>House Renovation</a>
-                                <a>Architecture Design</a>
-                                <a>Electrical Service</a>
-                                <a>Painting</a>
+                                <a data-i18n="buildingConstruction">Building Construction</a>
+                                <a data-i18n="houseRenovation">House Renovation</a>
+                                <a data-i18n="architectureDesign">Architecture Design</a>
+                                <a data-i18n="electricalService">Electrical Service</a>
+                                <a data-i18n="concreteConstruction">Concrete Construction</a>
+                                <a data-i18n="paintings">Painting</a>
                             </div>
                         </div>
                         <div class="col-md-6 col-lg-6">
                             <div class="footer-link">
-                                <h2>The following places are evidence of the honesty and accuracy of our work:</h2>
-                                <a>Toyota Company in Erbil - Zakho - Basra in 2009-2</a>
-                                <a>The Spanish Village Project, working on its homes and some of its projects</a>
-                                <a>The golden company</a>
-                                <a>Rami Tower Company</a>
-                                <a>Al-Fath Association in Baghdad</a>
-                                <a>Al-Badur sect in Baghdad</a>
+                                <h2 data-i18n="qq">The following places are evidence of the honesty and accuracy of our work:</h2>
+                                <a data-i18n="ll">Toyota Company in Erbil - Zakho - Basra in 2009-2</a>
+                                <a data-i18n="mm">The Spanish Village Project, working on its homes and some of its projects</a>
+                                <a data-i18n="nn">The golden company</a>
+                                <a data-i18n="oo">Rami Tower Company</a>
+                                <a data-i18n="pp">Al-Fath Association in Baghdad</a>
+                                <a data-i18n="kk">Al-Badur sect in Baghdad</a>
                     
                             
                             </div>
@@ -276,6 +285,9 @@
         </div>
 
         <!-- JavaScript Libraries -->
+        <script src="js/main.js"></script>
+        <script src="js/script.js"></script>
+        <script src="index.js"></script>
         <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
         <script src="lib/easing/easing.min.js"></script>
@@ -286,11 +298,10 @@
         <script src="lib/waypoints/waypoints.min.js"></script>
         <script src="lib/counterup/counterup.min.js"></script>
         <script src="lib/slick/slick.min.js"></script>
-        
-        <!-- Contact Javascript File -->
-        <script src="mail/jqBootstrapValidation.min.js"></script>
-        <script src="mail/contact.js"></script>
-
+        <script type="module" src="index.js"></script>
+        <script src="https://unpkg.com/i18next@latest/dist/umd/i18next.min.js"></script>
+        <script src="https://unpkg.com/jquery-i18next@latest/dist/umd/jquery-i18next.min.js"></script>
+        <script src="https://unpkg.com/i18next-http-backend@latest/i18nextHttpBackend.min.js"></script>
         <!-- Template Javascript -->
         <script src="js/main.js"></script>
     </body>
