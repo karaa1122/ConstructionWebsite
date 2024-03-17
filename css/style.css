@@ -78,8 +78,7 @@ a:focus {
 /**********************************/
 .top-bar {
     position: relative;
-    height: 100px;
-    background: #f3bb04;
+    height: 80px !important;
 }
 
 .top-bar .logo {
